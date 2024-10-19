@@ -65,12 +65,23 @@ public class HelloWorld
 		map.put("didn't", 1);
 		map.put("inadequte", 2);
 		map.put("struck", 3);
-
 		
 		Scanner sc = new Scanner(new File("src/hello/file.csv"));  
-		sc.useDelimiter(",");   //sets the delimiter pattern  
+		sc.useDelimiter(",");   //sets the delimiter pattern  idk if i need this
+		int i = 0;
+		int j = 0;
 		while (sc.hasNext())  //returns a boolean value  
-		{  
+		{  	
+			String[][] things = new String[5][10];
+		
+			if(i > 6) {
+				things[i][j] = sc.next();
+				i++;
+			}
+			else {
+				i = 0;
+				j++;
+			}
 			System.out.print(sc.next());  //find and returns the next complete token from this scanner  
 		}   
 		sc.close();  //closes the scanner  

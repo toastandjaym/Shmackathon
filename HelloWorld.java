@@ -8,8 +8,8 @@ public class HelloWorld
 	{
 		
 		Scanner k = new Scanner(System.in);
-		System.out.println("Input something: ");
-		String word = k.next();
+		System.out.println("Input a thing: ");
+		Statement statement = new Statement(k.next());
 		
 	}
 }

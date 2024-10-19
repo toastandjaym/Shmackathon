@@ -19,7 +19,9 @@ public class HelloWorld
 		String content = new String(Files.readAllBytes(Paths.get(file.getPath())));
 		String[] lines = content.split("\\r?\\n");
 		
-		Statement statement = new Statement();
+		for(int i = 0; i < lines.length; i++) {
+			Statement statement = new Statement(lines[i]);
+		}
 		
 	}
 }

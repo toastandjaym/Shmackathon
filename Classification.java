@@ -4,6 +4,7 @@ public class Classification {
 	String result;
 	Statement statement;
 	
+	
 	public Classification() {
 		
 	}

@@ -14,22 +14,22 @@ public class Classification {
 	
 	public void whichClass() {
 		if(statement.highEnergyPresent()==true && statement.highEnergyIncident()==true && statement.directControl()!=true && statement.seriousInjury()==true) {
-			result = "hsif";
+			result = "hsif"; //High-Energy Serious Injury or Fatality
 		}
 		if(statement.highEnergyPresent()==true && statement.highEnergyIncident()==true && statement.directControl()!=true && statement.seriousInjury()!=true) {
-			result = "psif";
+			result = "psif"; //Potential Serious Injury or Fatality
 		}
 		if(statement.highEnergyPresent()!=true && statement.highEnergyIncident()!=true && statement.directControl()!=true && statement.seriousInjury()==true) {
-			result = "lsif";
+			result = "lsif"; //Low-Energy Serious Injury or Fatality
 		}
 		if(statement.highEnergyPresent()==true && statement.highEnergyIncident()==true && statement.directControl()==true && statement.seriousInjury()!=true) {
-			result = "capacity";
+			result = "capacity"; //Incident with a release of high energy in the presence of a direct control where a serious injury is not sustained
 		}
 		if(statement.highEnergyPresent()==true && statement.highEnergyIncident()!=true && statement.directControl()==true && statement.seriousInjury()!=true) {
-			result = "success";
+			result = "success"; //Condition where a high-energy incident does not occur because of the presence of a direct control
 		}
 		if(statement.highEnergyPresent()==true && statement.highEnergyIncident()!=true && statement.directControl()!=true && statement.seriousInjury()!=true) {
-			result = "exposure";
+			result = "exposure"; //Condition where high energy is present in the absence of a direct control
 		}
 		if(statement.highEnergyPresent()!=true && statement.highEnergyIncident()!=true && statement.directControl()!=true && statement.seriousInjury()!=true) {
 			result = "low-severity";
@@ -37,3 +37,4 @@ public class Classification {
 	}
 	
 }
+

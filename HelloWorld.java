@@ -22,7 +22,7 @@ public class HelloWorld
 		map.put("hazard", 10);
 		map.put("fire", 10);
 		map.put("damaged", 5);
-		map.put("hosptial", 15);
+		map.put("hospital", 15);
 		map.put("pinch", 8);
 		map.put("fall", 10);
 		map.put("trip", 8);
@@ -33,7 +33,7 @@ public class HelloWorld
 		map.put("explosion", 15);
 		map.put("rescue", 10);
 		map.put("police", 10);
-		map.put("ambulence", 10);
+		map.put("ambulance", 10);
 		map.put("death", 15);
 		map.put("fatality", 15);
 		map.put("serious", 5);
@@ -44,7 +44,7 @@ public class HelloWorld
 		map.put("inexperience", 1);
 		map.put("head knocker", 2);
 		map.put("safety", 1);
-		map.put("debree", 5);
+		map.put("debris", 5);
 		map.put("concern", 2);
 		map.put("critical", 3);
 		map.put("first aid", 9);
@@ -63,7 +63,7 @@ public class HelloWorld
 		map.put("foreman", 1);
 		map.put("accident", 5);
 		map.put("didn't", 1);
-		map.put("inadequte", 2);
+		map.put("inadequate", 2);
 		map.put("struck", 3);
 		
 		Scanner sc = new Scanner(new File("src/hello/file.csv"));  

@@ -13,8 +13,26 @@ public class Classification {
 	}
 	
 	public void whichClass() {
-		if(statement.highEnergyPresent()==true && statement.highEnergyPresent()==true) {
-			
+		if(statement.highEnergyPresent()==true && statement.highEnergyIncident()==true && statement.directControl()!=true && statement.seriousInjury()==true) {
+			result = "hsif";
+		}
+		if(statement.highEnergyPresent()==true && statement.highEnergyIncident()==true && statement.directControl()!=true && statement.seriousInjury()!=true) {
+			result = "psif";
+		}
+		if(statement.highEnergyPresent()!=true && statement.highEnergyIncident()!=true && statement.directControl()!=true && statement.seriousInjury()==true) {
+			result = "lsif";
+		}
+		if(statement.highEnergyPresent()==true && statement.highEnergyIncident()==true && statement.directControl()==true && statement.seriousInjury()!=true) {
+			result = "capacity";
+		}
+		if(statement.highEnergyPresent()==true && statement.highEnergyIncident()!=true && statement.directControl()==true && statement.seriousInjury()!=true) {
+			result = "success";
+		}
+		if(statement.highEnergyPresent()==true && statement.highEnergyIncident()!=true && statement.directControl()!=true && statement.seriousInjury()!=true) {
+			result = "exposure";
+		}
+		if(statement.highEnergyPresent()!=true && statement.highEnergyIncident()!=true && statement.directControl()!=true && statement.seriousInjury()!=true) {
+			result = "low-severity";
 		}
 	}
 	
